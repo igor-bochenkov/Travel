@@ -1,0 +1,94 @@
+@use 'sass:math';
+@import "_mixins";
+
+//*======<ШРИФТЫ>============================================================================================================
+//<Подключаем шрифты>
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+
+//<Иконочные шрифты>
+//@import "icons";
+
+//<Шрифт по умолчанию>
+$fontFamily: "Georgia";
+$fontSize: rem(15);
+$mainFontColor: #545454;
+
+//*======<ПЕРЕМЕННЫЕ>=========================================================================================================
+$maxWidth: 1920;
+$minWidth: 320px;
+
+$maxWidthContainerLayout: 1200;
+$containerPadding: 40;
+$maxWidthContainer: $maxWidthContainerLayout + $containerPadding;
+
+//<Брейкпоинты>
+$md1: $maxWidthContainerLayout;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+//-- Mobile first (min-width)
+// $mdm1: 1200;
+// $mdm2: 992;
+// $mdm3: 768;
+// $mdm4: 576;
+
+//<Основные цвета сайта>
+$bgb: #F6F6F6;
+$btn: #F1CDB3;
+$btn_h: #FDDCC4;
+$inact: #CDCDCD;
+//*======<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ, ОБОЛОЧКА>==========================================================================================
+@import "_nullstyle";
+html {
+	scroll-behavior: smooth;
+}
+body {
+	position: relative;
+	color: $mainFontColor;
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	&.lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+//*======<ОСНОВНАЯ СЕТКА>======================================================================================================
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 40px;
+	box-sizing: content-box;
+	@media (max-width: ($md2+px)) {
+		padding: 0px 30px;
+	}
+	@media (max-width: ($md3+px)) {
+		max-width: 708px;
+	}
+	@media (max-width: ($md4+px)) {
+		max-width: none;
+		padding: 0px 10px;
+	}
+}
+
+//*========<ПОДКЛЮЧЕНИЕ ФАЙЛОВ>==================================================================================================
+//----UI СТИЛИ, ФОРМЫ И ГОТОВЫЕ КЛАССЫ----
+@import "ui";
+//@import "popup";
+//@import "forms";
+//----СТИЛИ СТРАНИЦ И ЭЛЕМЕНТОВ----
+@import "header";
+@import "footer";
+
+//*======<ОСНОВНОЙ БЛОК>=======================================================================================================
+.page {
+	flex: 1 1 auto;
+}
