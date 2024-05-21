@@ -104,6 +104,6 @@ dist
 .tern-port
 
 # Local
-/#scss/
-/.code-workspace
+/#scss
+.code-workspace
 

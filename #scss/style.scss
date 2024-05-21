@@ -57,9 +57,6 @@ body {
 	color: $fontColor;
 	font-size: $fontSize;
 	background-color: $bgb;
-	//background-color: black;
-	//line-height: $fontLineHeight;
-	//font-weight: $fontWeight;
 	&.lock {
 		overflow: hidden;
 	}
@@ -69,8 +66,6 @@ body {
 	max-width: 1440px;
 	margin: 0 auto;
 	background-color: #fff;
-	//padding: 0px 20px;
-	//width: 100%;
 	min-height: 100%;
 	overflow: hidden;
 	display: flex;
