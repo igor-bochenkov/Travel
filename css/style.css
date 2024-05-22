@@ -457,7 +457,7 @@ body.lock {
 
 .stories {
   padding: 0px 0px 44px 0px;
-  background-color: hsla(0, 0%, 100%, 0.5);
+  background-color: hsla(0, 0%, 100%, 0.7);
 }
 .stories__title {
   margin-bottom: 80px;
