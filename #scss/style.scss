@@ -78,6 +78,9 @@ body {
 	margin: 0 auto;
 	padding: 0px 10px;
 	box-sizing: content-box;
+	@media (max-width: 660px) {
+		padding: 0px 16px;
+	}
 	// @media (max-width: ($md2+px)) {
 	// 	padding: 0px 30px;
 	// }
