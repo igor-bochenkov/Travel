@@ -26,7 +26,6 @@
 							<span></span>
 						</div>
 					</div>
-					<!-- <div class="menu-header__wrapper"></div> -->
 					<nav class="menu-header__body">
 						<ul class="menu-header__list">
 							<li><a href="#how" class="menu-header__link"><span>How It Works</span></a></li>
@@ -85,19 +84,29 @@
 					<h2 class="destinations__title title">POPULAR DESTINATIONS</h2>
 					<div class="destinations__slider slider-destinations">
 						<div class="slider-destinations__slides">
-							<figure class="slider-destinations__slide">
+							<figure class="slider-destinations__slide slider-destinations__slide--1">
 								<img src="img/destinations-pic/01.jpg" alt="SPAIN">
 								<figcaption class="slider-destinations__name">SPAIN</figcaption>
 							</figure>
-							<figure class="slider-destinations__slide">
+							<figure class="slider-destinations__slide slider-destinations__slide--2">
 								<img src="img/destinations-pic/02.jpg" alt="JAPAN">
 								<figcaption class="slider-destinations__name">JAPAN</figcaption>
 							</figure>
-							<figure class="slider-destinations__slide">
+							<figure class="slider-destinations__slide slider-destinations__slide--3">
 								<img src="img/destinations-pic/03.jpg" alt="USA">
 								<figcaption class="slider-destinations__name">USA</figcaption>
 							</figure>
+							<div class="slider-destinations__slide-arrows">
+								<div
+									class="slider-destinations__slide-arrows-left slider-destinations__slide-arrows-left--noactive">
+									<img src="/img/icons/slider-arrow.svg" alt="arrow">
+								</div>
+								<div class="slider-destinations__slide-arrows-right">
+									<img src="/img/icons/slider-arrow.svg" alt="arrow">
+								</div>
+							</div>
 						</div>
+
 						<div class="slider-destinations__pagination pagination">
 							<div class="pagination__dot"></div>
 							<div class="pagination__dot pagination__dot--active"></div>
@@ -107,107 +116,115 @@
 					<button class="destinations__btn btn btn--arrow">Find More</button>
 				</div>
 			</section>
-			<section class="stories" id="stories">
-				<div class="stories__container container">
-					<h2 class="stories__title title">TRAVEL STORIES</h2>
-					<div class="stories__articles">
-						<div class="stories__item item-stories">
-							<a href="#!" class="item-stories__pic">
-								<img src="img/stories-pic/01.jpg" alt="Thailand">
-							</a>
-							<div class="item-stories__content">
-								<h3 class="item-stories__title">10 Photos of Attractive Thailand</h3>
-								<p class="item-stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-									anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-								<a href="#!" class="item-stories__spoiler">Read More</a>
-							</div>
+			<div class="page-background ">
+				<section class="stories" id="stories">
+					<div class="stories__container container">
+						<h2 class="stories__title title">TRAVEL STORIES</h2>
+						<div class="stories__articles">
+							<div class="stories__item item-stories">
+								<a href="#!" class="item-stories__pic">
+									<img src="img/stories-pic/01.jpg" alt="Thailand">
+								</a>
+								<div class="item-stories__content">
+									<h3 class="item-stories__title">10 Photos of Attractive Thailand</h3>
+									<p class="item-stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+										irure
+										dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+										Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+										anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<a href="#!" class="item-stories__spoiler">Read More</a>
+								</div>
 
-						</div>
-						<div class="stories__item item-stories">
-							<a href="#!" class="item-stories__pic">
-								<img src="img/stories-pic/02.jpg" alt="National Park">
-							</a>
-							<div class="item-stories__content">
-								<h3 class="item-stories__title">Canyonlands National Park, Utah</h3>
-								<p class="item-stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-									anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-								<a href="#!" class="item-stories__spoiler">Read More</a>
 							</div>
+							<div class="stories__item item-stories">
+								<a href="#!" class="item-stories__pic">
+									<img src="img/stories-pic/02.jpg" alt="National Park">
+								</a>
+								<div class="item-stories__content">
+									<h3 class="item-stories__title">Canyonlands National Park, Utah</h3>
+									<p class="item-stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+										irure
+										dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+										Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+										anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<a href="#!" class="item-stories__spoiler">Read More</a>
+								</div>
 
-						</div>
-						<div class="stories__item item-stories">
-							<a href="#!" class="item-stories__pic">
-								<img src="img/stories-pic/03.jpg" alt="Mountains">
-							</a>
-							<div class="item-stories__content">
-								<h3 class="item-stories__title">I left my heart in the Mountains!</h3>
-								<p class="item-stories__text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-									labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-									laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-									voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-									cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
-									ipsum dolor sit amet, consectetur adipiscing elit...
-								</p>
-								<a href="#!" class="item-stories__spoiler">Read More</a>
 							</div>
+							<div class="stories__item item-stories">
+								<a href="#!" class="item-stories__pic">
+									<img src="img/stories-pic/03.jpg" alt="Mountains">
+								</a>
+								<div class="item-stories__content">
+									<h3 class="item-stories__title">I left my heart in the Mountains!</h3>
+									<p class="item-stories__text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+										ut
+										labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+										laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+										voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+										cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+										laborum.Lorem
+										ipsum dolor sit amet, consectetur adipiscing elit...
+									</p>
+									<a href="#!" class="item-stories__spoiler">Read More</a>
+								</div>
 
+							</div>
+							<div class="stories__item item-stories">
+								<a href="#!" class="item-stories__pic">
+									<img src="img/stories-pic/04.jpg" alt="The Longest journey">
+								</a>
+								<div class="item-stories__content">
+									<h3 class="item-stories__title">The Longest journey in my life!</h3>
+									<p class="item-stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+										eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+										nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+										irure
+										dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+										Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+										anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<a href="#!" class="item-stories__spoiler">Read More</a>
+								</div>
+
+							</div>
 						</div>
-						<div class="stories__item item-stories">
-							<a href="#!" class="item-stories__pic">
-								<img src="img/stories-pic/04.jpg" alt="The Longest journey">
-							</a>
-							<div class="item-stories__content">
-								<h3 class="item-stories__title">The Longest journey in my life!</h3>
-								<p class="item-stories__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-									nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-									dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-									anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-								<a href="#!" class="item-stories__spoiler">Read More</a>
+						<button class="stories__btn btn btn--arrow">See More</button>
+					</div>
+				</section>
+				<footer class="footer" id="footer">
+					<div class="footer__container container">
+						<div class="footer__body">
+							<div class="footer__content">
+								<div class="footer__rights">All Rights Reserved © Travel Portal</div>
+								<ul class="footer__socials social-items">
+									<li>
+										<a href="https://github.com/igor-bochenkov" class="social-items__item">
+											<img src="img/icons/insta.svg" alt="instagram">
+										</a>
+									</li>
+									<li>
+										<a href="#!" class="social-items__item">
+											<img src="img/icons/youtube.svg" alt="youtube">
+										</a>
+									</li>
+									<li>
+										<a href="#!" class="social-items__item">
+											<img src="img/icons/twitter.svg" alt="twitter">
+										</a>
+									</li>
+								</ul>
 							</div>
 
 						</div>
 					</div>
-					<button class="stories__btn btn btn--arrow">See More</button>
-				</div>
-			</section>
-			<footer class="footer" id="footer">
-				<div class="footer__container container">
-					<div class="footer__body">
-						<div class="footer__content">
-							<div class="footer__rights">All Rights Reserved © Travel Portal</div>
-							<ul class="footer__socials social-items">
-								<li>
-									<a href="https://github.com/igor-bochenkov" class="social-items__item">
-										<img src="img/icons/insta.svg" alt="instagram">
-									</a>
-								</li>
-								<li>
-									<a href="#!" class="social-items__item">
-										<img src="img/icons/youtube.svg" alt="youtube">
-									</a>
-								</li>
-								<li>
-									<a href="#!" class="social-items__item">
-										<img src="img/icons/twitter.svg" alt="twitter">
-									</a>
-								</li>
-							</ul>
-						</div>
+				</footer>
+			</div>
 
-					</div>
-				</div>
-			</footer>
 		</main>
 
 	</div>
